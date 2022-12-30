@@ -1,0 +1,66 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.blue_bg {
+ background-color: #EFF2F9;
+}
+
+.greeting {
+    height: 840px;
+}
+
+.edu_forms {
+    height: 1454px;
+}
+
+.advantages {
+    height: 845px;
+}
+
+.vacancies {
+    height: 1269px;
+}
+
+.licenses {
+    height: 734px;
+}
+
+.edu_forms {
+    height: 1454px;
+}
+
+.areas {
+    height: 827px;
+}
+
+.teachers {
+    height: 1131px;
+}
+
+.partners {
+    height: 700px;
+}
+
+.photos {
+    height: 1022px;
+}
+
+.faq {
+    height: 1810px;
+}
+
+.contacts {
+    height: 1460px;
+}
+
+.footer {
+    height: 150px;
+}
