@@ -365,9 +365,99 @@ body {
     height: 1269px;
 }
 
+.vacancies h2 {
+    margin-top: 189px;
+    margin-left: 537px;
+    width: 847px;
+    height: 138px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 69px;
+    text-align: center;
+    color: #181940;
+}
+
+.vacancies h2 span {
+    color: #714A25;
+}
+
+.vacancies .clicker {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 160px;
+    gap: 27px;
+}
+
+.vacancies .clicker .clicker_button {
+    width: 380px;
+    height: 93px;
+    display: flex;
+    height: 93px;
+    background: #181940;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vacancies .clicker .clicker_button:first-child {
+    background: #714A25;
+}
+
+.vacancies .clicker .clicker_button p {
+    width: 173px;
+    height: 32px;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.vacancies .vac_lists {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin-left: 160px;
+}
+
+.vacancies .vac_lists .column {
+    margin-top: 40px;
+    padding-left: 5px;
+}
+
+.vacancies .vac_lists .column .salary {
+    width: 380px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 160%;
+    color: #181940;
+}
+
+.vacancies .vac_lists .column .salary span {
+    color: #714A25;
+    font-size: 26px;
+}
+
 .licenses {
+    position: relative;
     height: 734px;
 } 
+
+.licenses .mountains {
+    position: absolute;
+    left: 1492px;
+    top: -150px;
+}
 
 .areas {
     height: 827px;
