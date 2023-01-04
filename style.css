@@ -77,7 +77,7 @@ body {
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 900;
-    font-size: 115.217px;
+    font-size: 115px;
     line-height: 101px;
     color: #003ADC;
 }
@@ -112,10 +112,10 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
+    padding-bottom: 1%;
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    padding-bottom: 1%;
 }
 
 .greeting .logo_line .contact_tel {
@@ -146,7 +146,7 @@ body {
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 800;
-    font-size: 24.2928px;
+    font-size: 24px;
     line-height: 29px;
 }
 
@@ -157,13 +157,13 @@ body {
 
 .greeting .mini_headers {
     width: 925px;
-    height: 33.76px;
+    height: 33px;
     margin-left: 160px;
     margin-top: 70px;
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 800;
-    font-size: 27.3368px;
+    font-size: 27px;
     line-height: 33px;
     color: #181940;
 }
@@ -188,7 +188,7 @@ body {
     font-style: normal;
     padding: 3px 7px;
     font-weight: 400;
-    font-size: 27.3368px;
+    font-size: 27px;
     line-height: 33px;
     color: black;
     background: rgb(206, 217, 247);
@@ -200,7 +200,7 @@ body {
     width: 649px;
     left: 60%;
     top: 285px;
-    order: 999;
+    z-index: 20;
 }
 
 .edu_forms {
@@ -226,27 +226,28 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 50px;
-    line-height: 162.5%;
+    line-height: 162%;
     color: #181940;
     margin-top: -30px;
     margin-bottom: 10px;
 }
 
 .edu_forms .education_anchor_blocks .anchor_block span {
+    position: relative;
     font-family: 'Gilroy Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 162.5%;
+    line-height: 162%;
     color: #181940;
+    z-index: 10;
 }
 
 .edu_forms .education_anchor_blocks .anchor_block img {
     position: absolute;
-    width: 93px;
-    height: 256.68px;
-    left: 620px;
-    order: -999;
+    left: 570px;
+    top: 140px;
+    z-index: 0;
 }
 
 .edu_forms .education_anchor_blocks .anchor_block .anchor_header {
@@ -254,7 +255,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 162.5%;
+    line-height: 162%;
     display: flex;
     align-items: center;
     color: #003ADC;
@@ -278,7 +279,7 @@ body {
 }
 
 .edu_forms button {
-    width: 283.21px;
+    width: 283px;
     height: 64px;
     margin-left: 818px;
     margin-top: 80px;
@@ -300,7 +301,8 @@ body {
     position: absolute;
     width: 630px;
     left: 1300px;
-    top: 890px;
+    top: 935px;
+    z-index: 10;
 }
 
 .advantages {
@@ -336,6 +338,7 @@ body {
 
 .advantages .advantages_blocks .adv_block {
     display: flex;
+    align-items: center;
     gap: 32px;
     width: 614px;
     height: 112px;
@@ -343,11 +346,17 @@ body {
     box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
 }
 
+.advantages .advantages_blocks .adv_block .adv_picture {
+    width: 76px;
+    height: 76px;
+    margin-left: 32px;
+}
+
 .advantages .advantages_blocks .adv_block .adv_text {
     font-family: 'Gilroy Regular';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 160%;
     display: flex;
     align-items: center;
@@ -359,6 +368,7 @@ body {
     width: 252px;
     left: 107px;
     top: 720px;
+    z-index: 10;
 }
 
 .vacancies {
@@ -457,6 +467,7 @@ body {
     position: absolute;
     left: 1492px;
     top: -150px;
+    z-index: 10;
 }
 
 .areas {
