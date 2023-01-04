@@ -7,6 +7,22 @@
 }
 
 @font-face{
+	font-family: 'Gilroy Medium';
+    src: local("Gilroy Medium"), local("Gilroy Medium");
+	src: url('./fonts/Gilroy/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Gilroy Thin';
+    src: local("Gilroy Thin"), local("Gilroy Thin");
+	src: url('./fonts/Gilroy/Gilroy-Thin.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
 	font-family: 'Gilroy Bold';
     src: local("Gilroy Bold"), local("Gilroy Bold");
 	src: url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2');
@@ -49,6 +65,7 @@ body {
 }
 
 .greeting {
+    position: relative;
     height: 920px;
 }
 
@@ -181,13 +198,109 @@ body {
 .greeting .bank_pic {
     position: absolute;
     width: 649px;
-    left: 1650px;
+    left: 60%;
     top: 285px;
     order: 999;
 }
 
 .edu_forms {
-    height: 1454px;
+    position: relative;
+    height: 1240px;
+}
+
+.edu_forms .education_anchor_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 180px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block {
+    position: relative;
+    width: 712px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block h3 {
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 162.5%;
+    color: #181940;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block span {
+    font-family: 'Gilroy Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 162.5%;
+    color: #181940;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block img {
+    position: absolute;
+    width: 93px;
+    height: 256.68px;
+    left: 620px;
+    order: -999;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block .anchor_header {
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 162.5%;
+    display: flex;
+    align-items: center;
+    color: #003ADC;
+}
+
+.edu_forms h2 {
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 270px;
+    margin-bottom: 0px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 69px;
+    color: #181940;
+}
+
+.edu_forms h2 span {
+    color: #714A25;
+}
+
+.edu_forms button {
+    width: 283.21px;
+    height: 64px;
+    margin-left: 818px;
+    margin-top: 80px;
+}
+
+.edu_forms button p {
+    font-family: 'Gilroy Thin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.edu_forms .banknotes {
+    position: absolute;
+    width: 630px;
+    left: 1300px;
+    top: 890px;
 }
 
 .advantages {
@@ -200,11 +313,7 @@ body {
 
 .licenses {
     height: 734px;
-}
-
-.edu_forms {
-    height: 1454px;
-}
+} 
 
 .areas {
     height: 827px;
