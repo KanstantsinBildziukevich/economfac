@@ -304,7 +304,61 @@ body {
 }
 
 .advantages {
+    position: relative;
     height: 845px;
+}
+
+.advantages h2 {
+    padding-top: 129px;
+    margin-left: 536px;
+    width: 847px;
+    height: 138px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 69px;
+    text-align: center;
+    color: #181940;
+}
+
+.advantages h2 span {
+    color: #714A25;
+}
+
+.advantages .advantages_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 370px;
+    margin-top: 57px;
+}
+
+.advantages .advantages_blocks .adv_block {
+    display: flex;
+    gap: 32px;
+    width: 614px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.advantages .advantages_blocks .adv_block .adv_text {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #181940;
+}
+
+.advantages .diagram {
+    position: absolute;
+    width: 252px;
+    left: 107px;
+    top: 720px;
 }
 
 .vacancies {
