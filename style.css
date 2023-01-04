@@ -96,6 +96,7 @@ body {
 .greeting .logo_line .logo {
     margin-left: 8%;
     margin-top: 2%;
+    width: 330px;
 }
 
 .greeting .logo_line .logo_button {
@@ -245,6 +246,7 @@ body {
 
 .edu_forms .education_anchor_blocks .anchor_block img {
     position: absolute;
+    height: 157px;
     left: 570px;
     top: 140px;
     z-index: 0;
@@ -468,6 +470,7 @@ body {
     left: 1492px;
     top: -150px;
     z-index: 10;
+    width: 316px;
 }
 
 .areas {
