@@ -15,14 +15,6 @@
 }
 
 @font-face{
-	font-family: 'Gilroy Thin';
-    src: local("Gilroy Thin"), local("Gilroy Thin");
-	src: url('./fonts/Gilroy/Gilroy-Thin.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face{
 	font-family: 'Gilroy Bold';
     src: local("Gilroy Bold"), local("Gilroy Bold");
 	src: url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2');
@@ -47,10 +39,25 @@ body {
     width: 1920px;
     margin: 0 auto;
     padding: 0;
+    color: #181940;
 }
 
 .blue_bg {
  background-color: #EFF2F9;
+}
+
+h2 {
+    width: 847px;
+    height: 138px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 69px;
+}
+
+h2 span {
+    color: #714A25;
 }
 
 .blue_buttons {
@@ -60,8 +67,15 @@ body {
     align-items: center;
     display: flex;
     height: 55px;
-    gap: 20px;
+    gap: 18px;
     background: #003ADC;
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding-bottom: 5px;
+    color: #FFFFFF;
 }
 
 .greeting {
@@ -103,20 +117,6 @@ body {
     margin-left: 42%;
     margin-top: 2%;
     width: 304px;
-}
-
-.greeting .logo_line .logo_button .whatsapp {
-    width: 209px;
-    height: 20px;
-    font-family: 'Gilroy Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    padding-bottom: 1%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
 }
 
 .greeting .logo_line .contact_tel {
@@ -166,7 +166,6 @@ body {
     font-weight: 800;
     font-size: 27px;
     line-height: 33px;
-    color: #181940;
 }
 
 .greeting .specialization_section {
@@ -228,7 +227,6 @@ body {
     font-weight: 900;
     font-size: 50px;
     line-height: 162%;
-    color: #181940;
     margin-top: -30px;
     margin-bottom: 10px;
 }
@@ -240,7 +238,6 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 162%;
-    color: #181940;
     z-index: 10;
 }
 
@@ -268,16 +265,7 @@ body {
     margin-left: 160px;
     margin-top: 270px;
     margin-bottom: 0px;
-    font-family: 'Gilroy Black';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 69px;
-    color: #181940;
-}
-
-.edu_forms h2 span {
-    color: #714A25;
+    text-align: center;
 }
 
 .edu_forms button {
@@ -285,18 +273,6 @@ body {
     height: 64px;
     margin-left: 818px;
     margin-top: 80px;
-}
-
-.edu_forms button p {
-    font-family: 'Gilroy Thin';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 .edu_forms .banknotes {
@@ -315,19 +291,7 @@ body {
 .advantages h2 {
     padding-top: 129px;
     margin-left: 536px;
-    width: 847px;
-    height: 138px;
-    font-family: 'Gilroy Black';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 69px;
     text-align: center;
-    color: #181940;
-}
-
-.advantages h2 span {
-    color: #714A25;
 }
 
 .advantages .advantages_blocks {
@@ -362,7 +326,6 @@ body {
     line-height: 160%;
     display: flex;
     align-items: center;
-    color: #181940;
 }
 
 .advantages .diagram {
@@ -374,25 +337,13 @@ body {
 }
 
 .vacancies {
-    height: 1269px;
+    height: 1150px;
 }
 
 .vacancies h2 {
     margin-top: 189px;
     margin-left: 537px;
-    width: 847px;
-    height: 138px;
-    font-family: 'Gilroy Black';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 69px;
     text-align: center;
-    color: #181940;
-}
-
-.vacancies h2 span {
-    color: #714A25;
 }
 
 .vacancies .clicker {
@@ -452,7 +403,6 @@ body {
     font-weight: 800;
     font-size: 32px;
     line-height: 160%;
-    color: #181940;
 }
 
 .vacancies .vac_lists .column .salary span {
@@ -462,7 +412,7 @@ body {
 
 .licenses {
     position: relative;
-    height: 734px;
+    height: 760px;
 } 
 
 .licenses .mountains {
@@ -471,6 +421,35 @@ body {
     top: -150px;
     z-index: 10;
     width: 316px;
+}
+
+.licenses .text_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 160px;
+    padding-top: 60px;
+}
+
+.licenses .text_block h4 {
+    padding-top: 50px;
+    width: 664px;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+}
+
+.licenses .text_block p {
+    width: 684px;
+    font-family: 'Gilroy Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
 }
 
 .areas {
