@@ -411,6 +411,7 @@ h2 span {
 }
 
 .licenses {
+    display: flex;
     position: relative;
     height: 760px;
 } 
@@ -425,6 +426,7 @@ h2 span {
 
 .licenses .text_block {
     display: flex;
+    width: 700px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -452,16 +454,137 @@ h2 span {
     line-height: 34px;
 }
 
+.licenses .diplomas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
 .areas {
-    height: 827px;
+    height: 600px;
+}
+
+.areas h2 {
+    margin-top: 130px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.areas .areas_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 370px;
+    margin-top: 57px;
+}
+
+.areas .areas_blocks .areas_block {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 614px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.areas .areas_blocks .areas_block .areas_picture {
+    width: 76px;
+    height: 76px;
+    margin-left: 32px;
+}
+
+.areas .areas_blocks .areas_block .areas_text {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+}
+
+.areas button {
+    width: 400px;
+    height: 65px;
+    margin-left: 761px;
+    margin-top: 76px;
 }
 
 .teachers {
     height: 1131px;
 }
 
+.teachers h2 {
+    padding-top: 130px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.teachers .top_lecturers {
+    width: 1500px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 57px;
+}
+
+.teachers .top_lecturers .about_lecturers {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.teachers .top_lecturers .about_lecturers h4 {
+    margin-top: 55px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.teachers .top_lecturers .about_lecturers p {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #181940;
+    margin-top: -20px;
+}
+
+
+
 .partners {
+    display: flex;
+    flex-direction: column;
     height: 700px;
+}
+
+.partners h2 {
+    padding-top: 130px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.partners .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    margin-top: 99px;
+    margin-left: 320px;
+    gap: 70px;
 }
 
 .photos {
