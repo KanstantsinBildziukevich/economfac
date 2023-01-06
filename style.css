@@ -7,6 +7,14 @@
 }
 
 @font-face{
+	font-family: 'Gilroy Medium';
+    src: local("Gilroy Medium"), local("Gilroy Medium");
+	src: url('./fonts/Gilroy/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
 	font-family: 'Gilroy Bold';
     src: local("Gilroy Bold"), local("Gilroy Bold");
 	src: url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2');
@@ -31,10 +39,25 @@ body {
     width: 1920px;
     margin: 0 auto;
     padding: 0;
+    color: #181940;
 }
 
 .blue_bg {
  background-color: #EFF2F9;
+}
+
+h2 {
+    width: 847px;
+    height: 138px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 69px;
+}
+
+h2 span {
+    color: #714A25;
 }
 
 .blue_buttons {
@@ -44,11 +67,19 @@ body {
     align-items: center;
     display: flex;
     height: 55px;
-    gap: 20px;
+    gap: 18px;
     background: #003ADC;
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    padding-bottom: 5px;
+    color: #FFFFFF;
 }
 
 .greeting {
+    position: relative;
     height: 920px;
 }
 
@@ -60,7 +91,7 @@ body {
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 900;
-    font-size: 115.217px;
+    font-size: 115px;
     line-height: 101px;
     color: #003ADC;
 }
@@ -79,26 +110,13 @@ body {
 .greeting .logo_line .logo {
     margin-left: 8%;
     margin-top: 2%;
+    width: 330px;
 }
 
 .greeting .logo_line .logo_button {
     margin-left: 42%;
     margin-top: 2%;
     width: 304px;
-}
-
-.greeting .logo_line .logo_button .whatsapp {
-    width: 209px;
-    height: 20px;
-    font-family: 'Gilroy Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    padding-bottom: 1%;
 }
 
 .greeting .logo_line .contact_tel {
@@ -129,7 +147,7 @@ body {
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 800;
-    font-size: 24.2928px;
+    font-size: 24px;
     line-height: 29px;
 }
 
@@ -140,15 +158,14 @@ body {
 
 .greeting .mini_headers {
     width: 925px;
-    height: 33.76px;
+    height: 33px;
     margin-left: 160px;
     margin-top: 70px;
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 800;
-    font-size: 27.3368px;
+    font-size: 27px;
     line-height: 33px;
-    color: #181940;
 }
 
 .greeting .specialization_section {
@@ -171,7 +188,7 @@ body {
     font-style: normal;
     padding: 3px 7px;
     font-weight: 400;
-    font-size: 27.3368px;
+    font-size: 27px;
     line-height: 33px;
     color: black;
     background: rgb(206, 217, 247);
@@ -181,46 +198,481 @@ body {
 .greeting .bank_pic {
     position: absolute;
     width: 649px;
-    left: 1650px;
+    left: 60%;
     top: 285px;
-    order: 999;
+    z-index: 20;
 }
 
 .edu_forms {
-    height: 1454px;
+    position: relative;
+    height: 1240px;
+}
+
+.edu_forms .education_anchor_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 180px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block {
+    position: relative;
+    width: 712px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block h3 {
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 162%;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block span {
+    position: relative;
+    font-family: 'Gilroy Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 162%;
+    z-index: 10;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block img {
+    position: absolute;
+    height: 157px;
+    left: 570px;
+    top: 140px;
+    z-index: 0;
+}
+
+.edu_forms .education_anchor_blocks .anchor_block .anchor_header {
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 162%;
+    display: flex;
+    align-items: center;
+    color: #003ADC;
+}
+
+.edu_forms h2 {
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 270px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.edu_forms button {
+    width: 283px;
+    height: 64px;
+    margin-left: 818px;
+    margin-top: 80px;
+}
+
+.edu_forms .banknotes {
+    position: absolute;
+    width: 630px;
+    left: 1300px;
+    top: 935px;
+    z-index: 10;
 }
 
 .advantages {
+    position: relative;
     height: 845px;
 }
 
+.advantages h2 {
+    padding-top: 129px;
+    margin-left: 536px;
+    text-align: center;
+}
+
+.advantages .advantages_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 370px;
+    margin-top: 57px;
+}
+
+.advantages .advantages_blocks .adv_block {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 614px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.advantages .advantages_blocks .adv_block .adv_picture {
+    width: 76px;
+    height: 76px;
+    margin-left: 32px;
+}
+
+.advantages .advantages_blocks .adv_block .adv_text {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+}
+
+.advantages .diagram {
+    position: absolute;
+    width: 252px;
+    left: 107px;
+    top: 720px;
+    z-index: 10;
+}
+
 .vacancies {
-    height: 1269px;
+    height: 1150px;
+}
+
+.vacancies h2 {
+    margin-top: 189px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.vacancies .clicker {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 160px;
+    gap: 27px;
+}
+
+.vacancies .clicker .clicker_button {
+    width: 380px;
+    height: 93px;
+    display: flex;
+    height: 93px;
+    background: #181940;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vacancies .clicker .clicker_button:first-child {
+    background: #714A25;
+}
+
+.vacancies .clicker .clicker_button p {
+    width: 173px;
+    height: 32px;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.vacancies .vac_lists {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin-left: 160px;
+}
+
+.vacancies .vac_lists .column {
+    margin-top: 40px;
+    padding-left: 5px;
+}
+
+.vacancies .vac_lists .column .salary {
+    width: 380px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 160%;
+}
+
+.vacancies .vac_lists .column .salary span {
+    color: #714A25;
+    font-size: 26px;
 }
 
 .licenses {
-    height: 734px;
+    display: flex;
+    position: relative;
+    height: 760px;
+} 
+
+.licenses .mountains {
+    position: absolute;
+    left: 1492px;
+    top: -150px;
+    z-index: 10;
+    width: 316px;
 }
 
-.edu_forms {
-    height: 1454px;
+.licenses .text_block {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 160px;
+    padding-top: 60px;
+}
+
+.licenses .text_block h4 {
+    padding-top: 50px;
+    width: 664px;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+}
+
+.licenses .text_block p {
+    width: 684px;
+    font-family: 'Gilroy Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.licenses .diplomas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-right: 100px;
 }
 
 .areas {
-    height: 827px;
+    height: 600px;
+}
+
+.areas h2 {
+    margin-top: 130px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.areas .areas_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 370px;
+    margin-top: 57px;
+}
+
+.areas .areas_blocks .areas_block {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 614px;
+    height: 112px;
+    background: #FFFFFF;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.areas .areas_blocks .areas_block .areas_picture {
+    width: 76px;
+    height: 76px;
+    margin-left: 32px;
+}
+
+.areas .areas_blocks .areas_block .areas_text {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+}
+
+.areas button {
+    width: 400px;
+    height: 65px;
+    margin-left: 761px;
+    margin-top: 76px;
 }
 
 .teachers {
     height: 1131px;
 }
 
+.teachers h2 {
+    padding-top: 130px;
+    margin-left: 537px;
+    text-align: center;
+}
+
+.teachers .top_lecturers {
+    width: 1500px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 57px;
+}
+
+.teachers .top_lecturers .about_lecturers {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.teachers .top_lecturers .about_lecturers h4 {
+    margin-top: 55px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.teachers .top_lecturers .about_lecturers p {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #181940;
+    margin-top: -20px;
+}
+
 .partners {
+    display: flex;
+    flex-direction: column;
     height: 700px;
 }
 
-.photos {
-    height: 1022px;
+.partners h2 {
+    padding-top: 130px;
+    margin-left: 537px;
+    text-align: center;
 }
+
+.partners .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    margin-top: 99px;
+    margin-left: 320px;
+    gap: 70px;
+}
+
+.photos .gallery {
+    width: 1370px;
+    height: 845px;
+    margin-top: 170px;
+    margin-left: 255px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+    grid-gap: 15px;
+}
+
+.photos .gallery .gallery_block .gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photos .gallery .gallery_item_1 { 
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.photos .gallery h3 {
+    position: absolute;
+    width: 365px;
+    height: 84px;
+    left: 44px;
+    top: -10px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.photos .gallery h3 span {
+    opacity: 0.5;
+}
+
+.photos .gallery .gallery_item_2 { 
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.photos .gallery .gallery_item_3 { 
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.photos .gallery .gallery_item_4 { 
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.photos .gallery .gallery_item_5 { 
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.photos .gallery .gallery_item_6 { 
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.photos .gallery .gallery_item_7 { 
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.photos .gallery .gallery_item_8 { 
+    position: relative;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.photos .gallery .gallery_item_9 { 
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.photos .gallery .gallery_item_10 { 
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
 
 .faq {
     height: 1810px;
