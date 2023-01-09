@@ -200,6 +200,20 @@ h2 span {
     color: #181940;
 }
 
+.greeting nav .post_logo_menu li a::after {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+    content: "|";
+    color: #181940;
+}
+
+.greeting nav .post_logo_menu li #aspirantura::after {
+    display: none;
+}
+
 .greeting .mini_headers {
     width: 925px;
     height: 33px;
@@ -505,7 +519,12 @@ h2 span {
     padding-left: 5px;
 }
 
-.vacancies .vac_lists .column .salary {
+.vacancies .vac_lists .column .salary_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancies .vac_lists .column .salary_block .title {
     width: 380px;
     font-family: 'Gilroy Black';
     font-style: normal;
@@ -514,7 +533,12 @@ h2 span {
     line-height: 160%;
 }
 
-.vacancies .vac_lists .column .salary span {
+.vacancies .vac_lists .column .salary_block .salary {
+    width: 380px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%;
     color: #714A25;
     font-size: 26px;
 }
@@ -555,7 +579,7 @@ h2 span {
 }
 
 .licenses .text_block p {
-    width: 684px;
+    width: 650px;
     font-family: 'Gilroy Medium';
     font-style: normal;
     font-weight: 500;
@@ -666,6 +690,7 @@ h2 span {
     line-height: 30px;
     color: #181940;
     margin-top: -20px;
+    width: 395px;
 }
 
 .partners {
