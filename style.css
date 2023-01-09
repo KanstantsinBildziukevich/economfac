@@ -23,6 +23,14 @@
 }
 
 @font-face{
+	font-family: 'Gilroy Semibold';
+    src: local("Gilroy Semibold"), local("Gilroy Semibold");
+	src: url('./fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
 	font-family: 'Gilroy Black';
     src: local("Gilroy Black"), local("Gilroy Black");
 	src: url('./fonts/Gilroy/Gilroy-Black.woff2') format('woff2');
@@ -35,6 +43,22 @@
     src: local("Proxima Nova Extrabold"), local("Proxima Nova Extrabold");
 	src: url('./fonts/Proxima Nova/ProximaNova-Extrabld.woff2') format('woff2');
     font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto Bold';
+    src: local("Roboto Bold"), local("Roboto Bold");
+	src: url('./fonts/Roboto/Roboto-Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto Regular';
+    src: local("Roboto Regular"), local("Roboto Regular");
+	src: url('./fonts/Roboto/Roboto-Regular.ttf') format('woff2');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -59,7 +83,6 @@ body {
 }
 
 h2 {
-    width: 847px;
     height: 138px;
     font-family: 'Gilroy Black';
     font-style: normal;
@@ -297,12 +320,11 @@ h2 span {
 
 .advantages {
     position: relative;
-    height: 845px;
+    padding-bottom: 170px;
 }
 
 .advantages h2 {
     padding-top: 129px;
-    margin-left: 536px;
     text-align: center;
 }
 
@@ -349,12 +371,11 @@ h2 span {
 }
 
 .vacancies {
-    height: 1150px;
+    padding-bottom: 120px;
 }
 
 .vacancies h2 {
     margin-top: 189px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -478,12 +499,11 @@ h2 span {
 }
 
 .areas {
-    height: 600px;
+    padding-bottom: 100px;
 }
 
 .areas h2 {
     margin-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -529,12 +549,11 @@ h2 span {
 }
 
 .teachers {
-    height: 1131px;
+    padding-bottom: 150px;
 }
 
 .teachers h2 {
     padding-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -576,12 +595,12 @@ h2 span {
 .partners {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 700px;
 }
 
 .partners h2 {
     padding-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -742,7 +761,98 @@ h2 span {
 }
 
 .contacts {
-    height: 1460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 130px;
+}
+
+.contacts .main_info {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 1150px;
+    margin-top: 313px;
+}
+
+.contacts .contacts_text h2 {
+    width: 275px;
+    margin-bottom: -10px;
+}
+
+.contacts .contacts_text h4 {
+    width: 360px;
+    height: 33px;
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    color: #181940;
+    margin-bottom: -10px;
+}
+
+.contacts .contacts_text p {
+    width: 230px;
+    padding-bottom: 15px;
+}
+
+.contacts .contacts_text p span {
+    width: 210px;
+    height: 48px;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.contacts .contacts_text button {
+    width: 284px;
+    height: 64px;
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.contacts .other_maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 137px;
+}
+
+.contacts .other_maps .map_gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: -70px; 
+}
+
+.contacts .other_maps .map_gallery .gallery_piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts .other_maps .map_gallery .gallery_piece p {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    margin-top: -10px;
 }
 
 .footer {
