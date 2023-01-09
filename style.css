@@ -55,6 +55,14 @@
 }
 
 @font-face{
+	font-family: 'Roboto Black';
+    src: local("Roboto Black"), local("Roboto Black");
+	src: url('./fonts/Roboto/Roboto-Black.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
 	font-family: 'Roboto Regular';
     src: local("Roboto Regular"), local("Roboto Regular");
 	src: url('./fonts/Roboto/Roboto-Regular.ttf') format('woff2');
@@ -111,6 +119,26 @@ h2 span {
     line-height: 100%;
     padding-bottom: 5px;
     color: #FFFFFF;
+    border: 0;
+}
+
+.contact_tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;    
+    margin-left: 22px;
+    margin-top: 3%;
+}
+
+.contact_tel a {
+    text-decoration: none;
+    color: #333333;
 }
 
 .greeting {
@@ -152,25 +180,6 @@ h2 span {
     margin-left: 42%;
     margin-top: 2%;
     width: 304px;
-}
-
-.greeting .logo_line .contact_tel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gilroy Bold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-    text-align: right;    
-    margin-left: 22px;
-    margin-top: 3%;
-}
-
-.greeting .logo_line .contact_tel a {
-    text-decoration: none;
-    color: #333333;
 }
 
 .greeting nav .post_logo_menu {
@@ -775,12 +784,12 @@ h2 span {
     margin-top: 313px;
 }
 
-.contacts .contacts_text h2 {
+.contacts .main_info .contacts_text h2 {
     width: 275px;
     margin-bottom: -10px;
 }
 
-.contacts .contacts_text h4 {
+.contacts .main_info .contacts_text h4 {
     width: 360px;
     height: 33px;
     font-family: 'Roboto Bold';
@@ -792,12 +801,12 @@ h2 span {
     margin-bottom: -10px;
 }
 
-.contacts .contacts_text p {
+.contacts .main_info .contacts_text p {
     width: 230px;
     padding-bottom: 15px;
 }
 
-.contacts .contacts_text p span {
+.contacts .main_info .contacts_text p span {
     width: 210px;
     height: 48px;
     font-family: 'Roboto Regular';
@@ -808,7 +817,7 @@ h2 span {
     color: #333333;
 }
 
-.contacts .contacts_text button {
+.contacts .main_info .contacts_text button {
     width: 284px;
     height: 64px;
     font-family: 'Gilroy Semibold';
@@ -856,5 +865,47 @@ h2 span {
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 150px;
+}
+
+.footer .logo_footer {
+    margin-left: 160px;
+}
+
+.footer .text_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    margin-left: 77px;
+    margin-right: 66px;
+}
+
+.footer .text_footer p {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181940;
+}
+
+.footer .text_footer p span {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181940;
+}
+
+.footer .footer_button {
+    width: 303px;
+}
+
+.footer .contact_tel {
+    margin-top: 20px;
+    margin-left: 31px;
 }
