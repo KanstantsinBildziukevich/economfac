@@ -355,7 +355,7 @@ h2 span {
     position: absolute;
     height: 157px;
     left: 570px;
-    top: 140px;
+    top: 150px;
     z-index: 0;
 }
 
@@ -383,12 +383,13 @@ h2 span {
     height: 64px;
     margin-left: 818px;
     margin-top: 80px;
+    gap: 0;
 }
 
 .edu_forms .banknotes {
     position: absolute;
     width: 630px;
-    left: 1300px;
+    left: 1280px;
     top: 935px;
     z-index: 10;
 }
