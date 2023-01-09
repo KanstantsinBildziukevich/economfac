@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Economfac</title>
+    <style>
+        @import url("mini-mobile.css");
+        @import url("mobile.css");
+    </style>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,10 +25,10 @@
 
         <nav>
             <ul id="post_logo_menu" class="post_logo_menu">
-                <li><a id="college" href='#college'>Колледж </a></li>
-                <li><a id="bakalavriat" href='#bakalavriat'>Бакалавриа </a></li>
-                <li><a id="magistratura" href='#magistratura'>Магистратура </a></li>
-                <li><a id="aspirantura" href='#aspirantura'>Аспирантура </a></li>
+                <li><a href='#college'>Колледж </a></li>
+                <li><a href='#bakalavriat'>Бакалавриат </a></li>
+                <li><a href='#magistratura'>Магистратура </a></li>
+                <li><a href='#aspirantura'>Аспирантура </a></li>
             </ul>
         </nav>
         
@@ -153,10 +157,10 @@
         <h2>Кем вы можете<br><span>работать</span></h2> 
 
         <div class="clicker">
-            <div class="clicker_button"><p>КОЛЛЕДЖ</p></div>
-            <div class="clicker_button"><p>БАКАЛАВРИАТ</p></div>
-            <div class="clicker_button"><p>МАГИСТРАТУРА</p></div>
-            <div class="clicker_button"><p>АСПИРАНТУРА</p></div>
+            <div id="college" class="clicker_button"><p>КОЛЛЕДЖ</p></div>
+            <div id="bakalavriat" class="clicker_button"><p>БАКАЛАВРИАТ</p></div>
+            <div id="magistratura" class="clicker_button"><p>МАГИСТРАТУРА</p></div>
+            <div id="aspirantura" class="clicker_button"><p>АСПИРАНТУРА</p></div>
         </div>
 
         <div id="clicker_1" class="vac_lists">
@@ -376,85 +380,117 @@
     <div class="blue_bg faq">
         <h2>Ответы <br><span>на вопросы</span></h2> 
 
-        <div class="faq_blocks">
+        <div id="first_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Как поступить на экономиста?</h3>
             <p class="hidden">
                 Подать все необходимые документы на интересующую вас специальность. 
                 Прийти к обозначенному времени на организационное собрание.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="second_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Что нужно для поступления?</h3>
             <p class="hidden">
                 Аттестат о среднем образовании, результаты ОГЭ не ниже 
                 заявленных для вашей специальности.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="third_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Какой срок обучения?</h3>
             <p class="hidden">
                 Полный срок обучения - 4 года.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="fourth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Помогут ли с трудоустройством?</h3>
             <p class="hidden">
                 После успешного прохождения всех этапов обучения мы
                 рекомендуем часть лучших студентов в партнёрские компании.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="fifth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Как пройти вступительные экзамены?</h3>
             <p class="hidden">
                 Готовиться по приложенному списку литературы и иметь баллы
                 по трём основным дисциплинам выше 60/100.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="sixth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Какие способы оплаты существуют?</h3>
             <p class="hidden">
                 Поддерживаются любые виды транзакций и платежей.
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="seventh_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Можно ли учиться дистанционно?</h3>
             <p class="hidden">
                 Такая возможность имеется, но тогда весь результат будет зависеть
                 только от вашей способности к самоорганизации и самообразованию
             </p>
         </div>
-        <div class="faq_blocks">
+        <div id="ninth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
             <h3>Возможно ли сократить срок обучения?</h3>
-            <p>
+            <p class="hidden">
                 Да, сокращение срока возможно в случае, если у Вас есть диплом о среднем
                 профессиональном образовании при зачислении на бакалавриат, второе высшее.
             </p>
         </div>
 
         <img src="./assets/images/faq.svg" alt="faqing_head">
-
-        <form class="second_form">
-                <p class="form_header">Остались вопросы?</p>
-                <div class="form_text_areas">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Телефон">
-                    <input type="text" placeholder="Email">
-                    <button type="submit" class="blue_buttons">
-                        <p>ОТПРАВИТЬ</p>
-                    </button>
-                </div>
-                <div class="form_checkbox">
-                    <input type="checkbox">
-                    <label class="mini_text">
-                        Я даю согласие на обработку персональных данных, 
-                        согласен на получение информационных рассылок от Университета «Синергия» 
-                        и соглашаюсь c политикой конфиденциальности.
-                    </label>
-                </div>
-            </form>
     </div>
 
     <div class="contacts">
+        <form class="second_form">
+            <p class="form_header">Остались вопросы?</p>
+            <div class="form_text_areas">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+                <input type="text" placeholder="Email">
+                <button type="submit" class="blue_buttons">
+                    <p>ОТПРАВИТЬ</p>
+                </button>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox">
+                <label class="mini_text">
+                    Я даю согласие на обработку персональных данных, 
+                    согласен на получение информационных рассылок от Университета «Синергия» 
+                    и соглашаюсь c политикой конфиденциальности.
+                </label>
+            </div>
+        </form>
+        
         <div class="main_info">
             <div class="contacts_text">
                 <h2><span>Контакты</span></h2> 

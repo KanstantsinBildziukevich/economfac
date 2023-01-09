@@ -120,6 +120,7 @@ h2 span {
     padding-bottom: 5px;
     color: #FFFFFF;
     border: 0;
+    cursor: pointer;
 }
 
 .contact_tel {
@@ -515,7 +516,7 @@ h2 span {
 }
 
 .vacancies .vac_lists .column {
-    margin-top: 40px;
+    margin-top: 20px;
     padding-left: 5px;
 }
 
@@ -531,6 +532,7 @@ h2 span {
     font-weight: 800;
     font-size: 32px;
     line-height: 160%;
+    margin-bottom: 0px;
 }
 
 .vacancies .vac_lists .column .salary_block .salary {
@@ -814,72 +816,6 @@ h2 span {
     gap: 10px;
 }
 
-.faq .second_form {
-    position: absolute;
-    left: 70px;
-    top: 1460px;
-    display: flex;
-    flex-direction: column;
-    width: 1700px;
-    height: 330px;
-    background: #FFFFFF;
-    z-index: 10;
-    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
-    margin-top: 30px;
-    padding-top: 40px;
-    padding-left: 82px;
-    gap: 25px;
-}
-
-.faq .second_form .form_header {
-    font-family: 'Proxima Nova Extrabold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    color: #181940;
-    margin-bottom: 40px;
-}
-
-.faq .second_form .form_text_areas {
-    display: flex;
-    flex-direction: row;
-    gap: 21px;
-    align-items: center;
-}
-
-.faq .second_form .form_text_areas input {
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    width: 373px;
-    height: 69px;
-    text-indent: 24px;
-}
-
-.faq .second_form .form_text_areas button {
-    width: 462px;
-    height: 69px;
-}
-
-.faq .second_form .form_text_areas button p {
-    font-family: 'Gilroy Semibold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 97%;
-    padding-top: 5px;
-}
-
-.faq .second_form .form_text_areas input::placeholder {
-    font-family: 'Gilroy Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #303030;
-}
-
 .faq img {
     position: absolute;
     top: -155px;
@@ -892,10 +828,62 @@ h2 span {
 }
 
 .faq .faq_blocks {
+    position: relative;
     width: 1370px;
     background:white;
     border-radius: 4px;
     box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.faq .faq_blocks .cross{
+    
+}
+
+.faq .faq_blocks .cross {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    font-size: 1.5em;
+    background-color: white;
+    padding: 0 auto;
+}
+
+.faq .faq_blocks .cross span {
+    position: absolute;
+    transition: 300ms;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.faq .faq_blocks .cross span:first-child {
+    top: 25%;
+    bottom: 25%;
+    width: 10%;
+    left: 45%;
+}
+
+.faq .faq_blocks .cross span:last-child {
+    left: 25%;
+    right: 25%;
+    height: 10%;
+    top: 45%;
+}
+
+.minus {
+    
+}
+
+.faq .faq_blocks .cross:hover span {
+    transform: rotate(90deg);
+}
+
+.faq .faq_blocks .cross:hover span:last-child {
+    left: 50%;
+    right: 50%;
 }
 
 .faq .faq_blocks h3 {
@@ -930,8 +918,75 @@ h2 span {
 .contacts {
     display: flex;
     flex-direction: column;
+    position:relative;
     align-items: center;
     gap: 130px;
+}
+
+.contacts .second_form {
+    position: absolute;
+    left: 70px;
+    top: -260px;
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    height: 330px;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-left: 82px;
+    gap: 25px;
+}
+
+.contacts .second_form .form_header {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #181940;
+    margin-bottom: 40px;
+}
+
+.contacts .second_form .form_text_areas {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+.contacts .second_form .form_text_areas input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 373px;
+    height: 69px;
+    text-indent: 24px;
+}
+
+.contacts .second_form .form_text_areas button {
+    width: 462px;
+    height: 69px;
+}
+
+.contacts .second_form .form_text_areas button p {
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 97%;
+    padding-top: 5px;
+}
+
+.contacts .second_form .form_text_areas input::placeholder {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
 }
 
 .contacts .main_info {
