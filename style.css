@@ -23,10 +23,50 @@
 }
 
 @font-face{
+	font-family: 'Gilroy Semibold';
+    src: local("Gilroy Semibold"), local("Gilroy Semibold");
+	src: url('./fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
 	font-family: 'Gilroy Black';
     src: local("Gilroy Black"), local("Gilroy Black");
 	src: url('./fonts/Gilroy/Gilroy-Black.woff2') format('woff2');
     font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Proxima Nova Extrabold';
+    src: local("Proxima Nova Extrabold"), local("Proxima Nova Extrabold");
+	src: url('./fonts/Proxima Nova/ProximaNova-Extrabld.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto Bold';
+    src: local("Roboto Bold"), local("Roboto Bold");
+	src: url('./fonts/Roboto/Roboto-Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto Black';
+    src: local("Roboto Black"), local("Roboto Black");
+	src: url('./fonts/Roboto/Roboto-Black.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto Regular';
+    src: local("Roboto Regular"), local("Roboto Regular");
+	src: url('./fonts/Roboto/Roboto-Regular.ttf') format('woff2');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -46,8 +86,11 @@ body {
  background-color: #EFF2F9;
 }
 
+.hidden {
+    display: none;
+}
+
 h2 {
-    width: 847px;
     height: 138px;
     font-family: 'Gilroy Black';
     font-style: normal;
@@ -76,6 +119,27 @@ h2 span {
     line-height: 100%;
     padding-bottom: 5px;
     color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+.contact_tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;    
+    margin-left: 22px;
+    margin-top: 3%;
+}
+
+.contact_tel a {
+    text-decoration: none;
+    color: #333333;
 }
 
 .greeting {
@@ -119,25 +183,6 @@ h2 span {
     width: 304px;
 }
 
-.greeting .logo_line .contact_tel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gilroy Bold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-    text-align: right;    
-    margin-left: 22px;
-    margin-top: 3%;
-}
-
-.greeting .logo_line .contact_tel a {
-    text-decoration: none;
-    color: #333333;
-}
-
 .greeting nav .post_logo_menu {
     display: inline-flex;
     margin-left: 120px;
@@ -154,6 +199,20 @@ h2 span {
 .greeting nav .post_logo_menu li a {
     text-decoration: none;
     color: #181940;
+}
+
+.greeting nav .post_logo_menu li a::after {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+    content: "|";
+    color: #181940;
+}
+
+.greeting nav .post_logo_menu li #aspirantura::after {
+    display: none;
 }
 
 .greeting .mini_headers {
@@ -203,6 +262,72 @@ h2 span {
     z-index: 20;
 }
 
+.greeting .first_form {
+    position: absolute;
+    left: 70px;
+    top: 686px;
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    height: 326px;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    margin-top: 25px;
+    padding-top: 60px;
+    padding-left: 82px;
+    gap: 25px;
+}
+
+.greeting .first_form .form_header {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #181940;
+    margin-bottom: 3px;
+}
+
+.greeting .first_form .form_text_areas {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+.greeting .first_form .form_text_areas input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 373px;
+    height: 69px;
+    text-indent: 24px;
+}
+
+.greeting .first_form .form_text_areas button {
+    width: 462px;
+    height: 69px;
+}
+
+.greeting .first_form .form_text_areas button p {
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 97%;
+    padding-top: 5px;
+}
+
+.greeting .first_form .form_text_areas input::placeholder {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+  }
+
 .edu_forms {
     position: relative;
     height: 1240px;
@@ -245,7 +370,7 @@ h2 span {
     position: absolute;
     height: 157px;
     left: 570px;
-    top: 140px;
+    top: 150px;
     z-index: 0;
 }
 
@@ -273,24 +398,24 @@ h2 span {
     height: 64px;
     margin-left: 818px;
     margin-top: 80px;
+    gap: 0;
 }
 
 .edu_forms .banknotes {
     position: absolute;
     width: 630px;
-    left: 1300px;
+    left: 1280px;
     top: 935px;
     z-index: 10;
 }
 
 .advantages {
     position: relative;
-    height: 845px;
+    padding-bottom: 170px;
 }
 
 .advantages h2 {
     padding-top: 129px;
-    margin-left: 536px;
     text-align: center;
 }
 
@@ -337,12 +462,11 @@ h2 span {
 }
 
 .vacancies {
-    height: 1150px;
+    padding-bottom: 120px;
 }
 
 .vacancies h2 {
     margin-top: 189px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -392,20 +516,31 @@ h2 span {
 }
 
 .vacancies .vac_lists .column {
-    margin-top: 40px;
+    margin-top: 20px;
     padding-left: 5px;
 }
 
-.vacancies .vac_lists .column .salary {
+.vacancies .vac_lists .column .salary_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancies .vac_lists .column .salary_block .title {
     width: 380px;
     font-family: 'Gilroy Black';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
     line-height: 160%;
+    margin-bottom: 0px;
 }
 
-.vacancies .vac_lists .column .salary span {
+.vacancies .vac_lists .column .salary_block .salary {
+    width: 380px;
+    font-family: 'Gilroy Black';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%;
     color: #714A25;
     font-size: 26px;
 }
@@ -446,7 +581,7 @@ h2 span {
 }
 
 .licenses .text_block p {
-    width: 684px;
+    width: 650px;
     font-family: 'Gilroy Medium';
     font-style: normal;
     font-weight: 500;
@@ -466,12 +601,11 @@ h2 span {
 }
 
 .areas {
-    height: 600px;
+    padding-bottom: 100px;
 }
 
 .areas h2 {
     margin-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -517,12 +651,11 @@ h2 span {
 }
 
 .teachers {
-    height: 1131px;
+    padding-bottom: 150px;
 }
 
 .teachers h2 {
     padding-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -559,17 +692,18 @@ h2 span {
     line-height: 30px;
     color: #181940;
     margin-top: -20px;
+    width: 395px;
 }
 
 .partners {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 700px;
 }
 
 .partners h2 {
     padding-top: 130px;
-    margin-left: 537px;
     text-align: center;
 }
 
@@ -587,12 +721,12 @@ h2 span {
 
 .photos .gallery {
     width: 1370px;
-    height: 845px;
+    height: 980px;
     margin-top: 170px;
     margin-left: 255px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 5vw);
+    grid-template-rows: repeat(4, 200px);
     grid-gap: 15px;
 }
 
@@ -673,15 +807,318 @@ h2 span {
     grid-row: 2 / span 1;
 }
 
-
 .faq {
-    height: 1810px;
+    padding-bottom: 296px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq img {
+    position: absolute;
+    top: -155px;
+    left: 1380px;
+}
+
+.faq h2 {
+    padding-top: 130px;
+    text-align: center;
+}
+
+.faq .faq_blocks {
+    position: relative;
+    width: 1370px;
+    background:white;
+    border-radius: 4px;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+}
+
+.faq .faq_blocks .cross{
+    
+}
+
+.faq .faq_blocks .cross {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    font-size: 1.5em;
+    background-color: white;
+    padding: 0 auto;
+}
+
+.faq .faq_blocks .cross span {
+    position: absolute;
+    transition: 300ms;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.faq .faq_blocks .cross span:first-child {
+    top: 25%;
+    bottom: 25%;
+    width: 10%;
+    left: 45%;
+}
+
+.faq .faq_blocks .cross span:last-child {
+    left: 25%;
+    right: 25%;
+    height: 10%;
+    top: 45%;
+}
+
+.minus {
+    
+}
+
+.faq .faq_blocks .cross:hover span {
+    transform: rotate(90deg);
+}
+
+.faq .faq_blocks .cross:hover span:last-child {
+    left: 50%;
+    right: 50%;
+}
+
+.faq .faq_blocks h3 {
+    width: 872px;
+    padding: 4px 0;
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #181940;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.faq .faq_blocks p {
+    width: 801px;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #181940;
+    margin-left: 50px;
+    padding-bottom: 35px;
+    padding-top: -10px;
+    margin-top: -15px;
 }
 
 .contacts {
-    height: 1460px;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    align-items: center;
+    gap: 130px;
+}
+
+.contacts .second_form {
+    position: absolute;
+    left: 70px;
+    top: -260px;
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    height: 330px;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-left: 82px;
+    gap: 25px;
+}
+
+.contacts .second_form .form_header {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #181940;
+    margin-bottom: 40px;
+}
+
+.contacts .second_form .form_text_areas {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+.contacts .second_form .form_text_areas input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 373px;
+    height: 69px;
+    text-indent: 24px;
+}
+
+.contacts .second_form .form_text_areas button {
+    width: 462px;
+    height: 69px;
+}
+
+.contacts .second_form .form_text_areas button p {
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 97%;
+    padding-top: 5px;
+}
+
+.contacts .second_form .form_text_areas input::placeholder {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.contacts .main_info {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 1150px;
+    margin-top: 250px;
+}
+
+.contacts .main_info .contacts_text h2 {
+    width: 275px;
+    margin-bottom: -10px;
+}
+
+.contacts .main_info .contacts_text h4 {
+    width: 360px;
+    height: 33px;
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    color: #181940;
+    margin-bottom: -10px;
+}
+
+.contacts .main_info .contacts_text p {
+    width: 230px;
+    padding-bottom: 15px;
+}
+
+.contacts .main_info .contacts_text p span {
+    width: 210px;
+    height: 48px;
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.contacts .main_info .contacts_text button {
+    width: 284px;
+    height: 64px;
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.contacts .other_maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 137px;
+}
+
+.contacts .other_maps .map_gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: -70px; 
+}
+
+.contacts .other_maps .map_gallery .gallery_piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts .other_maps .map_gallery .gallery_piece p {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    margin-top: -10px;
 }
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 150px;
+}
+
+.footer .logo_footer {
+    margin-left: 160px;
+}
+
+.footer .text_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    margin-left: 77px;
+    margin-right: 66px;
+}
+
+.footer .text_footer p {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181940;
+}
+
+.footer .text_footer p span {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181940;
+}
+
+.footer .footer_button {
+    width: 303px;
+}
+
+.footer .contact_tel {
+    margin-top: 20px;
+    margin-left: 31px;
 }

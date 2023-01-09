@@ -1,3 +1,7 @@
-<svg width="73" height="157" viewBox="0 0 73 157" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M41.0776 0.759991H72.3256V157H36.6136V38.4808L8.9368 46.0696L0.232 15.4912L41.0776 0.759991Z" fill="#FFD5AD"/>
+<svg width="124" height="157" viewBox="0 0 124 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.0776 0.759991H84.3256V157H48.6136V38.4808L20.9368 46.0696L12.232 15.4912L53.0776 0.759991Z" fill="#FFD5AD"/>
+<line y1="-1.5" x2="88.2383" y2="-1.5" transform="matrix(-0.943805 0.330502 0.330502 0.943805 84.2798 7)" stroke="white" stroke-width="3"/>
+<line y1="-1.5" x2="88.2383" y2="-1.5" transform="matrix(-0.943805 0.330502 0.330502 0.943805 123.398 20.8112)" stroke="white" stroke-width="3"/>
 </svg>
+
+

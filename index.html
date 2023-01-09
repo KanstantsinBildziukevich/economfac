@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Economfac</title>
+    <style>
+        @import url("mini-mobile.css");
+        @import url("mobile.css");
+    </style>
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,10 +25,10 @@
 
         <nav>
             <ul id="post_logo_menu" class="post_logo_menu">
-                <li><a id="college" href='#college'>Колледж |</a></li>
-                <li><a id="bakalavriat" href='#bakalavriat'>Бакалавриат |</a></li>
-                <li><a id="magistratura" href='#magistratura'>Магистратура |</a></li>
-                <li><a id="aspirantura" href='#aspirantura'>Аспирантура</a></li>
+                <li><a href='#college'>Колледж </a></li>
+                <li><a href='#bakalavriat'>Бакалавриат </a></li>
+                <li><a href='#magistratura'>Магистратура </a></li>
+                <li><a href='#aspirantura'>Аспирантура </a></li>
             </ul>
         </nav>
         
@@ -43,6 +47,26 @@
         </div>
 
         <img class="bank_pic" src="./assets/images/bank.svg" alt="bank">
+
+        <form class="first_form">
+            <p class="form_header">Оставь заявку и мы свяжемся с тобой в течение 15 минут</p>
+            <div class="form_text_areas">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+                <input type="text" placeholder="Email">
+                <button type="submit" class="blue_buttons">
+                    <p>ОТПРАВИТЬ</p>
+                </button>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox">
+                <label class="mini_text">
+                    Я даю согласие на обработку персональных данных, 
+                    согласен на получение информационных рассылок от Университета «Синергия» 
+                    и соглашаюсь c политикой конфиденциальности.
+                </label>
+            </div>
+        </form>
     </div>
 
     <div class="edu_forms">
@@ -55,8 +79,8 @@
                 <img src="./assets/images/number_1.svg" alt="number_1">
                 <h3>Очная/Заочная</h3>
                 <span>
-                    Первая стадия образования, где Вы научитесь понимать азы <br>профессии, 
-                    грамотно работать с информацией, осуществлять <br>все виды деятельности 
+                    Первая стадия образования, где Вы научитесь понимать азы профессии, 
+                    грамотно работать с информацией, осуществлять все виды деятельности 
                     бухгалтера учёта.
                 </span>
             </div>
@@ -65,8 +89,8 @@
                 <img src="./assets/images/number_2.svg" alt="number_2">
                 <h3>Очная/Заочная</h3>
                 <span>
-                    Данный уровень образования позволит Вам полностью <br>погрузиться в специальность, 
-                    пройти все виды практики в <br>экономических, финансовых, бухгалтерских службах 
+                    Данный уровень образования позволит Вам полностью погрузиться в специальность, 
+                    пройти все виды практики в экономических, финансовых, бухгалтерских службах 
                     <br>и кредитных организациях.
                 </span>
             </div>
@@ -75,9 +99,9 @@
                 <img src="./assets/images/number_3.svg" alt="number_3">
                 <h3>Очная/Заочная</h3>
                 <span>
-                    Заключительный этап высшего образования, обучаясь <br>на котором Вы углубитесь 
+                    Заключительный этап высшего образования, обучаясь на котором Вы углубитесь 
                     в изучение финансового <br>риск-менеджмента и выберете дальнейшую <br>образовательную 
-                    траекторию в соответствии со своими <br>научными и карьерными интересами.
+                    траекторию в соответствии со своими научными и карьерными интересами.
                 </span>
             </div>
             <div class="anchor_block">
@@ -86,8 +110,8 @@
                 <h3>Очная/Заочная</h3>
                 <span>
                     Уровень образования, который готовит <br>научно-педагогические кадры. Обучаясь на нём 
-                    Вы <br>овладеете методологией научного творчества, <br>современными информационными технологиями, 
-                    будете <br>готовы к исследовательской, консультационной и <br>аналитической деятельности.
+                    <br>Вы овладеете методологией научного творчества, современными информационными технологиями, 
+                    будете готовы к исследовательской, консультационной и <br>аналитической деятельности.
                 </span>
             </div>
         </div>
@@ -133,36 +157,84 @@
         <h2>Кем вы можете<br><span>работать</span></h2> 
 
         <div class="clicker">
-            <div class="clicker_button"><p>КОЛЛЕДЖ</p></div>
-            <div class="clicker_button"><p>БАКАЛАВРИАТ</p></div>
-            <div class="clicker_button"><p>МАГИСТРАТУРА</p></div>
-            <div class="clicker_button"><p>АСПИРАНТУРА</p></div>
+            <div id="college" class="clicker_button"><p>КОЛЛЕДЖ</p></div>
+            <div id="bakalavriat" class="clicker_button"><p>БАКАЛАВРИАТ</p></div>
+            <div id="magistratura" class="clicker_button"><p>МАГИСТРАТУРА</p></div>
+            <div id="aspirantura" class="clicker_button"><p>АСПИРАНТУРА</p></div>
         </div>
 
-        <div class="vac_lists">
+        <div id="clicker_1" class="vac_lists">
             <div class="column">
-                <p class="salary">Помощник Бухгалтера <br><span>30 000 - 35 000 руб</span></p>
-                <p class="salary">Специалист <br>по документооборту <br><span>40 000 руб</span></p>
-                <p class="salary">Бухгалтер <br>на первичную <br>документацию <br><span>45 000 руб</span></p>
-                <p class="salary">Младший Бухгалтер <br><span>50 000 руб</span></p>
+                <div class="salary_block">
+                    <p class="title">Помощник Бухгалтера</p>
+                    <span class="salary">30 000 - 35 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Специалист по документооборту</p> 
+                    <span class="salary">40 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Бухгалтер на первичную документацию</p>
+                    <span class="salary">45 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Младший Бухгалтер</p> 
+                    <span class="salary">50 000 руб</span>
+                </div>
             </div>
             <div class="column">
-                <p class="salary">Экономист-аналитик <br><span>30 000 - 35 000 руб</span></p>
-                <p class="salary">Ведущий экономист <br><span>40 000 руб</span></p>
-                <p class="salary">Специалист по <br>исследованиям рынка <br><span>80 000 - 100 000 руб</span></p>
-                <p class="salary">Руководитель планово- <br>экономического отдела <br><span>150 000 - 200 000 руб</span></p>
+                <div class="salary_block">
+                    <p class="title">Экономист-аналитик</p>
+                    <span class="salary">30 000 - 35 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Ведущий экономист</p> 
+                    <span class="salary">40 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Специалист по исследованиям рынка </p>
+                    <span class="salary">80 000 - 100 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Руководитель планово-экономического отдела</p> 
+                    <span class="salary">150 000 - 200 000 руб</span>
+                </div>
             </div>
             <div class="column">
-                <p class="salary">IT-аудит <br><span>130 000 руб</span></p>
-                <p class="salary">Цифровой финансист <br><span>40 000 руб</span></p>
-                <p class="salary">Цифровой аналитик <br><span>150 000 - 200 000 руб</span></p>
-                <p class="salary">Финансовый директор <br><span>300 000 руб</span></p>
+                <div class="salary_block">
+                    <p class="title">IT-аудит</p> 
+                    <span class="salary">130 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Цифровой финансист</p>
+                    <span class="salary">40 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Цифровой аналитик</p> 
+                    <span class="salary">150 000 - 200 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Финансовый директор</p> 
+                    <span class="salary">300 000 руб</span>
+                </div>
             </div>
             <div class="column">
-                <p class="salary">Доцент кафедры <br><span>80 000 руб</span></p>
-                <p class="salary">Преподаватель <br>экономических наук <br> в вузе<br><span>100 000 - 150 000 руб</span></p>
-                <p class="salary">Руководитель кафедры <br><span>155 000 руб</span></p>
-                <p class="salary">Финансовый директор <br><span>300 000 руб</span></p>
+                <div class="salary_block">
+                    <p class="title">Доцент кафедры</p> 
+                    <span class="salary">80 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Преподаватель экономических наук в вузе</p>
+                    <span class="salary">100 000 - 150 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Руководитель кафедры</p> 
+                    <span class="salary">155 000 руб</span>
+                </div>
+                <div class="salary_block">
+                    <p class="title">Финансовый директор</p> 
+                    <span class="salary">300 000 руб</span>
+                </div>
             </div>
         </div>
     </div>
@@ -172,18 +244,20 @@
             <h2>2 диплома <br><span>по окончанию <br>обучения</span></h2> 
             <h4>Государственная лицензия и аккредитация</h4>
             <p>
-                Программы высшего профессионального образования <br>
-                и магистратуры факультета экономики соответствуют <br>
-                европейским стандартам закреплённым Болонской <br>
+                Программы высшего профессионального образования
+                и магистратуры факультета экономики соответствуют
+                европейским стандартам закреплённым Болонской 
                 декларацией.
             </p>
         </div>
 
         <div class="diplomas">
-            <img class="images" src="./assets/images/diploma_group.svg" alt="diplomas" width="590">
             <img class="images" src="./assets/images/diploma1.svg" alt="diploma">
             <img class="images" src="./assets/images/diploma2.svg" alt="diploma">
             <img class="images" src="./assets/images/diploma3.svg" alt="diploma">
+            <img class="images" src="./assets/images/diploma4.svg" alt="diploma">
+            <img class="images" src="./assets/images/diploma5.svg" alt="diploma">
+            <img class="images" src="./assets/images/diploma6.svg" alt="diploma">
         </div>
 
         <img class="mountains" src="./assets/images/mountains.svg" alt="mountains">
@@ -225,15 +299,15 @@
             <div class="about_lecturers">
                 <img src="./assets/images/teacher1.jpg" alt="first_teacher" height="416">
                 <h4>Кухаренко Алесь Геннадьевич</h4>
-                <p>Кандидат экономических наук, доцент. <br>Главный экономист ФГУП <br>"Почта России"</p>
+                <p>Кандидат экономических наук, доцент. Главный экономист ФГУП "Почта России"</p>
             </div>
 
             <div class="about_lecturers">
                 <img src="./assets/images/teacher2.png" alt="second_teacher" height="416">
                 <h4>Тельминов Анатолий Витальевич</h4>
                 <p>
-                    Кандидат экономических наук, эксперт по <br>оценке и анализу бизнеса и 
-                    активов ООО <br>«Инвест-проект», специалист по <br>инвестициям в недвижимость
+                    Кандидат экономических наук, эксперт по оценке и анализу бизнеса и 
+                    активов ООО «Инвест-проект», специалист по инвестициям в недвижимость
                 </p>
             </div>
 
@@ -241,8 +315,8 @@
                 <img src="./assets/images/teacher3.jpg" alt="third_teacher" height="416">
                 <h4>Родин Александр Юрьевич</h4>
                 <p>
-                    Кандидат экономических наук, <br>управляющий партнер ООО «Центр <br>независимой оценки 
-                    и консалтинга», <br>эксперт по оценке и анализу стоимости <br>бизнеса, опыт преподавания – 11 лет.
+                    Кандидат экономических наук, управляющий партнер ООО «Центр независимой оценки 
+                    и консалтинга», эксперт по оценке и анализу стоимости бизнеса, опыт преподавания – 11 лет.
                 </p>
             </div>
         </div>
@@ -303,11 +377,166 @@
 
     </div>
     
-    <div class="blue_bg faq"></div>
+    <div class="blue_bg faq">
+        <h2>Ответы <br><span>на вопросы</span></h2> 
 
-    <div class="contacts"></div>
+        <div id="first_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Как поступить на экономиста?</h3>
+            <p class="hidden">
+                Подать все необходимые документы на интересующую вас специальность. 
+                Прийти к обозначенному времени на организационное собрание.
+            </p>
+        </div>
+        <div id="second_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Что нужно для поступления?</h3>
+            <p class="hidden">
+                Аттестат о среднем образовании, результаты ОГЭ не ниже 
+                заявленных для вашей специальности.
+            </p>
+        </div>
+        <div id="third_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Какой срок обучения?</h3>
+            <p class="hidden">
+                Полный срок обучения - 4 года.
+            </p>
+        </div>
+        <div id="fourth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Помогут ли с трудоустройством?</h3>
+            <p class="hidden">
+                После успешного прохождения всех этапов обучения мы
+                рекомендуем часть лучших студентов в партнёрские компании.
+            </p>
+        </div>
+        <div id="fifth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Как пройти вступительные экзамены?</h3>
+            <p class="hidden">
+                Готовиться по приложенному списку литературы и иметь баллы
+                по трём основным дисциплинам выше 60/100.
+            </p>
+        </div>
+        <div id="sixth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Какие способы оплаты существуют?</h3>
+            <p class="hidden">
+                Поддерживаются любые виды транзакций и платежей.
+            </p>
+        </div>
+        <div id="seventh_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Можно ли учиться дистанционно?</h3>
+            <p class="hidden">
+                Такая возможность имеется, но тогда весь результат будет зависеть
+                только от вашей способности к самоорганизации и самообразованию
+            </p>
+        </div>
+        <div id="ninth_question" class="faq_blocks">
+            <button class="cross">
+                <span></span>
+                <span></span>
+            </button>
+            <h3>Возможно ли сократить срок обучения?</h3>
+            <p class="hidden">
+                Да, сокращение срока возможно в случае, если у Вас есть диплом о среднем
+                профессиональном образовании при зачислении на бакалавриат, второе высшее.
+            </p>
+        </div>
+
+        <img src="./assets/images/faq.svg" alt="faqing_head">
+    </div>
+
+    <div class="contacts">
+        <form class="second_form">
+            <p class="form_header">Остались вопросы?</p>
+            <div class="form_text_areas">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Телефон">
+                <input type="text" placeholder="Email">
+                <button type="submit" class="blue_buttons">
+                    <p>ОТПРАВИТЬ</p>
+                </button>
+            </div>
+            <div class="form_checkbox">
+                <input type="checkbox">
+                <label class="mini_text">
+                    Я даю согласие на обработку персональных данных, 
+                    согласен на получение информационных рассылок от Университета «Синергия» 
+                    и соглашаюсь c политикой конфиденциальности.
+                </label>
+            </div>
+        </form>
+        
+        <div class="main_info">
+            <div class="contacts_text">
+                <h2><span>Контакты</span></h2> 
+                <h4>Приёмная комиссия</h4>
+                <p><span>м. Семеновская, ул. Измайловский вал, дом 2</span></p>
+                <button class="blue_buttons">
+                    <p>Записаться на встречу</p>
+                </button>
+            </div>
+
+            <img src="./assets/images/map_1.png" alt="map" width="750" height="450">
+        </div>
+
+        <div class="other_maps">
+            <h2>Учебные <span>корпуса</span></h2> 
+            <div class="map_gallery">
+                <div class="gallery_piece">
+                    <img src="./assets/images/map_2.png" alt="map" width="428" height="257">
+                    <p>М. Сокол, Ленинградский пр-т 80,к Е</p>
+                </div>
+                <div class="gallery_piece">
+                    <img src="./assets/images/map_3.png" alt="map" width="428" height="257">
+                    <p>М. Измайловская, ул. Никитинская 4а</p>
+                </div>
+                <div class="gallery_piece">
+                    <img src="./assets/images/map_4.png" alt="map" width="428" height="257">
+                    <p>М. Аэропорт, ул. Планетная, 36</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <div class="blue_bg footer"></div>
+    <div class="blue_bg footer">
+        <img class="logo_footer" src="./assets/images/sinergia_foot.svg" alt="logo" width="153">
+        <div class="text_footer">
+            <p>Instagram: <span>economica_synergy</span></p>
+            <p>Whats App: <span>+ 7 977 278 33 63</span></p>
+            <p>Адрес: <span>г. Москва, Измайловский Вал, д. 2</span></p>
+        </div>
+        <button class="blue_buttons footer_button">
+            <img src="./assets/images/phone.svg" alt="phone">
+            <p>Написать в WhatsApp</p>
+        </button>
+        <p class="contact_tel"><a href="tel:84952252339">8 495 225 23 39</a></p>
+        <div></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
