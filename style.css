@@ -247,6 +247,72 @@ h2 span {
     z-index: 20;
 }
 
+.greeting .first_form {
+    position: absolute;
+    left: 70px;
+    top: 686px;
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    height: 326px;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    margin-top: 25px;
+    padding-top: 60px;
+    padding-left: 82px;
+    gap: 25px;
+}
+
+.greeting .first_form .form_header {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #181940;
+    margin-bottom: 3px;
+}
+
+.greeting .first_form .form_text_areas {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+.greeting .first_form .form_text_areas input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 373px;
+    height: 69px;
+    text-indent: 24px;
+}
+
+.greeting .first_form .form_text_areas button {
+    width: 462px;
+    height: 69px;
+}
+
+.greeting .first_form .form_text_areas button p {
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 97%;
+    padding-top: 5px;
+}
+
+.greeting .first_form .form_text_areas input::placeholder {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+  }
+
 .edu_forms {
     position: relative;
     height: 1240px;
@@ -722,6 +788,72 @@ h2 span {
     gap: 10px;
 }
 
+.faq .second_form {
+    position: absolute;
+    left: 70px;
+    top: 1460px;
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+    height: 330px;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-left: 82px;
+    gap: 25px;
+}
+
+.faq .second_form .form_header {
+    font-family: 'Proxima Nova Extrabold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #181940;
+    margin-bottom: 40px;
+}
+
+.faq .second_form .form_text_areas {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+.faq .second_form .form_text_areas input {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 373px;
+    height: 69px;
+    text-indent: 24px;
+}
+
+.faq .second_form .form_text_areas button {
+    width: 462px;
+    height: 69px;
+}
+
+.faq .second_form .form_text_areas button p {
+    font-family: 'Gilroy Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 97%;
+    padding-top: 5px;
+}
+
+.faq .second_form .form_text_areas input::placeholder {
+    font-family: 'Gilroy Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+}
+
 .faq img {
     position: absolute;
     top: -155px;
@@ -781,7 +913,7 @@ h2 span {
     flex-direction: row;
     gap: 40px;
     width: 1150px;
-    margin-top: 313px;
+    margin-top: 250px;
 }
 
 .contacts .main_info .contacts_text h2 {
