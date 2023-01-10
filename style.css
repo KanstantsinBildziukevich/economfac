@@ -488,9 +488,10 @@ h2 span {
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
-.vacancies .clicker .clicker_button:first-child {
+.vacancies .clicker .clicker_button.active {
     background: #714A25;
 }
 
@@ -830,16 +831,24 @@ h2 span {
 .faq .faq_blocks {
     position: relative;
     width: 1370px;
-    background:white;
     border-radius: 4px;
+    background: #FFFFFF;
     box-shadow: 10px 8px 39px rgba(192, 192, 192, 0.25);
+    cursor: pointer;
 }
 
-.faq .faq_blocks .cross{
-    
+.faq .faq_blocks .faq_text {
+    display: none;
+}
+
+.faq .faq_blocks.active .faq_text {
+    display: block;
 }
 
 .faq .faq_blocks .cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 80px;
     top: 30px;
@@ -848,42 +857,26 @@ h2 span {
     height: 50px;
     border: 0;
     font-size: 1.5em;
-    background-color: white;
-    padding: 0 auto;
+    background-color: #FFFFFF;
 }
 
-.faq .faq_blocks .cross span {
+.faq .faq_blocks .cross::before, 
+.faq .faq_blocks .cross::after {
+    content: "";
     position: absolute;
-    transition: 300ms;
-    background: rgb(0, 0, 0);
     border-radius: 2px;
+    width: 32px;
+    height: 4px;
+    transition: 300ms;
+    background: #000000;
 }
 
-.faq .faq_blocks .cross span:first-child {
-    top: 25%;
-    bottom: 25%;
-    width: 10%;
-    left: 45%;
-}
-
-.faq .faq_blocks .cross span:last-child {
-    left: 25%;
-    right: 25%;
-    height: 10%;
-    top: 45%;
-}
-
-.minus {
-    
-}
-
-.faq .faq_blocks .cross:hover span {
+.faq .faq_blocks .cross::after {
     transform: rotate(90deg);
 }
 
-.faq .faq_blocks .cross:hover span:last-child {
-    left: 50%;
-    right: 50%;
+.faq .faq_blocks.active .cross::after {
+    transform: rotate(0);
 }
 
 .faq .faq_blocks h3 {
